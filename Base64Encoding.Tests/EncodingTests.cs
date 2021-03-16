@@ -29,6 +29,6 @@ namespace Base64Encoding.Tests
             var standartBase64 = Encoding.Default.GetString(Convert.FromBase64String(inputBase64));
             var customBase64 = Encoding.Default.GetString(Base64.Decode(inputBase64));
             Assert.AreEqual(standartBase64, customBase64);
-        }
+        }        
     }
 }
